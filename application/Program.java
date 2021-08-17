@@ -39,7 +39,7 @@ public class Program {
         } catch (ParseException e) {
             System.out.println("Invalid date format");
         } catch (DomainException e) {
-            System.out.println();
+            System.out.println("Error in reservation: " + e.getMessage());
         }
         sc.close();
     }
